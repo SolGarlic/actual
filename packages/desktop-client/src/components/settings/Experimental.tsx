@@ -289,6 +289,11 @@ export function ExperimentalFeatures() {
           <Trans>Akahu Bank Sync (NZ banks)</Trans>
         </FeatureToggle>
       )}
+      {isUsingServer && (
+        <FeatureToggle flag="bankSyncReverseAmounts">
+          <Trans>Reverse bank sync transaction amounts</Trans>
+        </FeatureToggle>
+      )}
       {showServerPrefs && (
         <ServerFeatureToggle
           prefName="flags.plugins"

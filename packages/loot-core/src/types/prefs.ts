@@ -12,7 +12,8 @@ export type FeatureFlag =
   | 'sankeyReport'
   | 'akahuBankSync'
   | 'mobileCalculator'
-  | 'monteCarloReport';
+  | 'monteCarloReport'
+  | 'bankSyncReverseAmounts';
 
 /**
  * Cross-device preferences. These sync across devices when they are changed.
@@ -64,6 +65,7 @@ export type SyncedPrefs = Partial<
     | `sync-import-notes-${string}`
     | `sync-import-transactions-${string}`
     | `sync-update-dates-${string}`
+    | `sync-reverse-amounts-${string}`
     | `ofx-fallback-missing-payee-${string}`
     | `ofx-swap-payee-memo-${string}`
     | `qif-swap-payee-memo-${string}`
